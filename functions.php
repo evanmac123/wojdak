@@ -495,6 +495,7 @@ endif;
  		'can_export'          => true,
  		'has_archive'         => true,
  		'exclude_from_search' => false,
+		'taxonomies'  => array( 'category' ),
  		'publicly_queryable'  => true,
  		'capability_type'     => 'page',
  	);

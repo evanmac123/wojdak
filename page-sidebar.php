@@ -15,6 +15,7 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 				<h1> <?php the_title(); ?></h1>
+			<div class="row">
 			<div class="col-md-8"><?php 	the_content(); ?></div>
 
 			<?php endwhile; // end of the loop. ?>
@@ -44,6 +45,7 @@ get_header(); ?>
 
 					<?php endif; // end sidebar widget area ?>
 				</div>
+			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php get_footer(); ?>
