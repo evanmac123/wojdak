@@ -147,7 +147,7 @@ function sparkling_widgets_init() {
     'id'            => 'footer-widget-1',
     'name'          =>  esc_html__( 'Footer Widget 1', 'sparkling' ),
     'description'   =>  esc_html__( 'Used for footer widget area', 'sparkling' ),
-    'before_widget' => '<div id="%1$s" class="col-lg-6 widget %2$s">',
+    'before_widget' => '<div id="%1$s" class="col-lg-3 widget footer-contact %2$s">',
     'after_widget'  => '</div>',
     'before_title'  => '<h3 class="widgettitle">',
     'after_title'   => '</h3>',

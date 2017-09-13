@@ -20,7 +20,7 @@
 				$description = get_field('staff_description'); ?>
       </div>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-5">
             <div class="row">
               <div class="staff-single__image col-lg-12">
                 <?php if( !empty($image) ): ?>
@@ -31,7 +31,7 @@
               </div>
             </div>
         </div>
-        <div class="col-md-8  staff-single__text">
+        <div class="col-md-7  staff-single__text">
           <header class="entry-header  row">
             <h2 class="staff-single__name"><?php echo $name;?></h2>
             <div class="staff-single__title">
@@ -65,7 +65,7 @@
                   </div>
                     <?php if( !empty($linkedin) ): ?>
                       <div class="staff-single__linkedin contact">
-                        <a href="<?php echo $linkedin; ?>" class="fa fa-linkedin"></a>
+                        <a href="<?php echo $linkedin; ?>" class="fa fa-linkedin-square"></a>
                       </div>
                   <?php else:
                   endif;

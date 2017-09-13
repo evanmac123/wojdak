@@ -9,7 +9,7 @@
 	<div class="post-inner-content">
 		<header class="entry-header page-header">
 			<?php bcn_display(); ?>
-			<h1 class="entry-title "><?php the_title(); ?></h1>
+			<h1><?php the_title(); ?></h1>
 
 			<div class="entry-meta">
 				<?php sparkling_posted_on(); ?>

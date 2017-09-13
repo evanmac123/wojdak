@@ -89,7 +89,7 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
 
     h1, .h1 {
       font-size: 2.2em;
-      padding: 30px 0;
+      padding: 20px 0;
     }
 
     h2, .h2 {
@@ -274,7 +274,7 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
     }
 
     .page-content, .entry-content, .entry-summary {
-      margin: 1.5em 0 0;
+      margin:0;
     }
 
     .page-links {
@@ -1272,8 +1272,8 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
     }
 
     #footer-area .footer-widget-area {
-      padding: 40px 0 20px 0;
-      overflow: hidden;
+      padding: 80px 0px;
+      min-height: 380px;
     }
 
     #footer-area ul li {
@@ -1706,6 +1706,7 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
 
     .clear {
       margin-right: 100%;
+      background-color:#000000;
     }
 
     .button {
@@ -1741,6 +1742,10 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
     }
     /*HOME*/
 
+    .top-section{
+      margin: 56px 0;
+    }
+
     .flex-control-paging li a {
       width: 10px;
       height: 10px;
@@ -1764,7 +1769,7 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
     }
 
     .flexslider .slides img {
-      max-width: 100%;
+      max-width: %;
       display: block;
       margin: auto;
       width: auto;
@@ -1775,6 +1780,50 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
       margin-top: 0;
       padding-top: 0;
     }
+
+    .twitter-widget{
+      margin-top:56px;
+    }
+
+    .post-time{
+      font-size:.8em;
+      color:gray;
+      float:right;
+    }
+    .wpsms .wpsms-item .wpsms-body-text{
+      display: inline-block;
+      min-height: 131px;
+    }
+    .wpsms p {
+    line-height: 1.3em;
+    }
+
+    .twitter-name{
+      font-size:1.0em;
+      color:black;
+      letter-spacing: .2;
+    }
+
+    .twitter-username{
+      color:gray;
+      font-size:.8em;
+    }
+
+    .wpsms-icon-twitter:before {
+    content: "";
+    width:34px;
+    height:34px;
+    display:inline-block;
+    background-size:cover;
+    background-image: url(assets/images/wojdak_logo.png)
+    }
+
+    .wpsms .wpsms-item .wpsms-meta-info {
+    font-size: .8em;
+    margin-bottom: .5em;
+    }
+
+
     /*STAFF*/
 
     .staff {
@@ -1794,7 +1843,7 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
 
     .staff__name {
       font-weight: 400;
-      font-size: 1.2em;
+      font-size: 1.1em;
     }
 
     .staff__id {
@@ -1802,7 +1851,7 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
     }
 
     .staff__title {
-      color: #000000;
+      color: gray;
     }
 
     .staff-single {
@@ -1828,6 +1877,11 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
       font-weight: 400;
       padding-top: 0;
       margin-top: 0;
+      color: #000000;
+    }
+
+    .staff-single__description{
+      font-size:16px;
     }
 
     .staff-single__title {
@@ -1843,13 +1897,24 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
     }
 
     .staff-single-info {
-      margin-top: 1em;
+      line-height:30px;
+      font-weight:400;
+      font-size:.9em;
+      letter-spacing:1px;
+      margin-top:2em;
     }
 
     .staff-breadcrumb {
       font-size: .8em;
       text-transform: uppercase;
       padding: 20px;
+    }
+    .staff-breadcrumb span{
+      margin: 0 3px;
+    }
+
+    .staff-breadcrumb span:first-child{
+      margin: 0;
     }
 
     .staff-single__linkedin a {
@@ -1859,17 +1924,53 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
       height: 30px;
       display: block;
       padding: 6px 8px;
+      font-size:19px;
     }
     /*CONTACT*/
 
     .contact {
-      padding: 0px 0 20px 0;
+      padding: 0px 0 12px 0;
+      font-size:.8em;
+      font-weight:300;
     }
+    .nf-form-title{
+      display:none;
+    }
+
+    .nf-form-cont .nf-field-label label {
+      font-weight:300;
+      font-size:18px;
+      color:#000000;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"], input[type="url"], input[type="password"], input[type="search"], textarea {
+    font-weight:300;
+    font-size:18px;
+    color:#000000;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    }
+
+    .submit-wrap input{
+      padding: 10px 20px;
+      background-color:#1a2c3d;
+      border: none;
+      color:#fff;
+      font-size:14px;
+      text-transform: uppercase;
+    }
+
+
     /*TESTIMONIAL*/
 
     .testimonial__title {
       text-transform: uppercase;
       font-weight: 400;
+      margin-top:30px;
+    }
+
+    .flex-column{
+      margin-bottom:50px;
     }
 
     .testimonial__title:after {
@@ -1889,10 +1990,16 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
 
     .client__image {
       max-width: 100%;
-      padding: 20px;
-      height: 120px;
+      width: 191px;
+      height: 171px;
       object-fit: contain;
+      padding: 0 20px 20px 0;
     }
+
+    .client .col-md-3{
+      padding:0;
+    }
+
     /*FOOTER*/
 
     .widget h3 {
@@ -1909,13 +2016,14 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
       width: 30px;
       background-color: #000;
       height: 1px;
-      margin: 20px 0;
+      margin: 30px 0;
       content: '';
       display: block;
     }
 
     .footer-widget-area h3 {
       color: #FFFFFF;
+      font-weight:300;
     }
 
     .footer-widget-area h3:after {
@@ -1923,19 +2031,27 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
     }
 
     .footer-widget-area .p1 {
-      font-size: 16px;
-      letter-spacing: .34px
+      font-size: 10px;
+      letter-spacing: .34px;
+      margin-top:10px;
+    }
+
+    .footer-contact{
+      float:left;
     }
 
     .footer-social {
       padding-bottom: .5em;
       width: 100%;
       float: left;
+      font-size:.8em;
+      padding: 0 0 10px 0;
     }
 
     .footer-social img {
       width: 28px;
       height: 28px;
+      margin-right:10px;
     }
     /*NINJA FORM*/
 
@@ -1985,8 +2101,9 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
       font-size: 18px;
       color: inherit;
       font-weight: 400;
-      border-bottom: 1px solid #C3C3C3;
+      border-bottom: 1px solid #efefef;
       display: inline-block;
+      color:#c3c3c3;
     }
 
     .panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {

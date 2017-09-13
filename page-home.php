@@ -8,7 +8,9 @@
  */
 
 get_header(); ?>
-
+<div class="top-section">
+  <?php sparkling_featured_slider(); ?>
+</div>
   <div id="primary" class="content-area">
 
     <main id="main" class="site-main" role="main">
@@ -22,7 +24,8 @@ get_header(); ?>
       				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'sparkling' ),
       				'after'  => '</div>',
       			) );
-      		?>'
+      		?>
+
         </div>
       <?php endwhile; // end of the loop. ?>
 

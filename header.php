@@ -74,11 +74,6 @@ if (isset($_SERVER['HTTP_USER_AGENT']) && (strpos($_SERVER['HTTP_USER_AGENT'], '
 
 	<div id="content" class="site-content">
 
-		<div class="top-section">
-			<?php sparkling_featured_slider(); ?>
-			<?php sparkling_call_for_action(); ?>
-		</div>
-
 		<div class="container main-content-area">
             <?php $layout_class = get_layout_class(); ?>
 			<div class="row <?php echo $layout_class; ?>">
