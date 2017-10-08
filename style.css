@@ -36,7 +36,7 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
 ----------------------------------------------- */
 
     body {
-      color: #6B6B6B;
+      color: #000;
       background-color: #F2F2F2;
       word-wrap: break-word;
       font-family: 'Lato', sans-serif;
@@ -855,7 +855,7 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
     .navbar-default .navbar-nav>li>a {
       color: #F5F7FA;
       line-height: 40px;
-      text-transform: uppercase;
+      text-transform: none;
       font-size: 12px;
     }
 
@@ -943,11 +943,6 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
 
     .navbar-nav>li>.dropdown-menu {
       padding: 0;
-    }
-
-    .navbar-nav>li>a {
-      padding-top: 18px;
-      padding-bottom: 18px;
     }
 
     .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
@@ -1272,8 +1267,9 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
     }
 
     #footer-area .footer-widget-area {
-      padding: 80px 0px;
-      min-height: 380px;
+      padding: 70px;
+      float: left;
+      width: 100%;
     }
 
     #footer-area ul li {
@@ -1717,9 +1713,8 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
     /*Header*/
 
     #logo img {
-      height: 35px;
+      height: 63px;
       width: auto;
-      margin-top: 18px;
     }
     /*NAVIGATION*/
 
@@ -1738,7 +1733,7 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
     }
 
     .site-navigation-inner {
-      padding: 10px 12px;
+      padding: 15px;
     }
     /*HOME*/
 
@@ -1983,8 +1978,7 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
     }
 
     .testimonial__image {
-      width: 545px;
-      padding: 30px;
+      max-height: 150px;
     }
     /*CLIENT*/
 
@@ -2089,10 +2083,18 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
     }
 
     .panel-default>.panel-heading {
-      color: #333;
       background-color: transparent;
       border: none;
       padding: 10px 0;
+    }
+
+
+    .panel-default {
+      border: none;
+    }
+
+    .panel-body{
+      color:#000000;
     }
 
     .panel-title {
@@ -2103,7 +2105,11 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
       font-weight: 400;
       border-bottom: 1px solid #efefef;
       display: inline-block;
-      color:#c3c3c3;
+      color:#000000;
+    }
+
+    .panel-title .collapsed, .collapse {
+      color: #C3C3C3;
     }
 
     .panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {

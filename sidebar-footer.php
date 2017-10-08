@@ -16,14 +16,14 @@
 
 	<div class="footer-widget-area">
 		<?php if ( is_active_sidebar( 'footer-widget-1' ) ) : ?>
-		<div class="col-sm-8 footer-widget" role="complementary">
+		<div class="col-md-10 footer-widget" role="complementary">
 			<?php dynamic_sidebar( 'footer-widget-1' ); ?>
 		</div><!-- .widget-area .first -->
 		<?php endif; ?>
 
 
 		<?php if ( is_active_sidebar( 'footer-widget-3' ) ) : ?>
-		<div class="col-sm-4 footer-widget" role="complementary">
+		<div class="col-md-2 footer-widget" role="complementary">
 			<?php dynamic_sidebar( 'footer-widget-3' ); ?>
 		</div><!-- .widget-area .third -->
 		<?php endif; ?>

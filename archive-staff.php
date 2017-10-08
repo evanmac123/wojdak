@@ -44,7 +44,7 @@ get_header(); ?>
       ?>
     </div>
     <div class="row">
-      <h3 class="text-center" style="padding:20px 0">Administration and Accounting</h3>
+      <h3 class="col-md-12" >Administration and Accounting</h3>
       <?php
       $args2 = array(
         'post_type' => 'Staff',
